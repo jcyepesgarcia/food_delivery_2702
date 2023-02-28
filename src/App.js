@@ -12,11 +12,11 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <HeadlineCards/>
-        <Food/>
-        <Category/>
+        <HeadlineCards />
+        <Food />
+        <Category />
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }

@@ -4,10 +4,9 @@ import { data } from "../data/data.js";
 function Food() {
   const [productos, setProductos] = useState(data);
 
-
   // filtrado por categoria
   function filtrarXCategoria(categoria) {
-    console.log('clicked categoria');
+    console.log("clicked categoria");
     setProductos(
       data.filter((item) => {
         return item.category === categoria;
@@ -33,19 +32,34 @@ function Food() {
         <div className="my-2">
           <p className="font-bold text-gray-700">Filtre por Categoría</p>
           <div className="flex justify-between flex-wrap">
-            <button onClick={()=>setProductos(data)} className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+            <button
+              onClick={() => setProductos(data)}
+              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+            >
               Todos
             </button>
-            <button onClick={()=>filtrarXCategoria('hamburguesa')} className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+            <button
+              onClick={() => filtrarXCategoria("hamburguesa")}
+              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+            >
               Hamburguesas
             </button>
-            <button onClick={()=>filtrarXCategoria('pizza')} className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+            <button
+              onClick={() => filtrarXCategoria("pizza")}
+              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+            >
               Pizza
             </button>
-            <button onClick={()=>filtrarXCategoria('ensalada')} className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+            <button
+              onClick={() => filtrarXCategoria("ensalada")}
+              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+            >
               Ensalada
             </button>
-            <button onClick={()=>filtrarXCategoria('pollo')} className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+            <button
+              onClick={() => filtrarXCategoria("pollo")}
+              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+            >
               Pollo
             </button>
           </div>
@@ -54,16 +68,28 @@ function Food() {
         <div className="my-2">
           <p className="font-bold text-gray-700">Filtre por Precio</p>
           <div className="flex justify-between max-w-[400px] w-full">
-            <button onClick={()=>filtrarXPrecio('$')} className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+            <button
+              onClick={() => filtrarXPrecio("$")}
+              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+            >
               $
             </button>
-            <button onClick={()=>filtrarXPrecio('$$')} className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+            <button
+              onClick={() => filtrarXPrecio("$$")}
+              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+            >
               $$
             </button>
-            <button onClick={()=>filtrarXPrecio('$$$')} className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+            <button
+              onClick={() => filtrarXPrecio("$$$")}
+              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+            >
               $$$
             </button>
-            <button onClick={()=>filtrarXPrecio('$$$$')} className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
+            <button
+              onClick={() => filtrarXPrecio("$$$$")}
+              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
+            >
               $$$$
             </button>
           </div>
